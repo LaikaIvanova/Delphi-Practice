@@ -9,7 +9,8 @@ uses
 
 procedure PrintWelcomeMessage;
 begin
-  Writeln('Welcome to the Delphi Learning App!');
+  WriteLn('Welcome to the Delphi Learning App!');
+  WriteLn('');
 end;
 
 procedure PrintNumbers;
@@ -85,16 +86,15 @@ end;
 begin
   try
     PrintWelcomeMessage;
-    PrintNumbers;
-    Writeln('Sum of 5 and 3 is: ', AddNumbers(5, 3));
     DemonstrateInterface;
-    DemonstrateGenerics; // Call the new procedure
+    TAuto.Create.Drive;
   except
     on E: Exception do
     begin
       Writeln('An unexpected error occurred: ', E.Message);
     end;
   end;
+  WriteLn('');
   Writeln('Press ENTER to exit.');
   ReadLn;
 end.
