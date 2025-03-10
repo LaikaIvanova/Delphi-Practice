@@ -88,6 +88,7 @@ begin
     PrintWelcomeMessage;
     DemonstrateInterface;
     TAuto.Create.Drive;
+    TAuto.Create.Refuel;
   except
     on E: Exception do
     begin
