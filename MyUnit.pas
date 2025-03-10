@@ -45,7 +45,7 @@ implementation
 
 function TMyClass.GetMessage: string;
 begin
-  Result := 'Hello from TMyClass!';
+  Result := 'Preparing Tasks:';
 end;
 
 constructor TAuto.Create;
@@ -60,7 +60,7 @@ end;
 
 procedure TAuto.Drive;
 begin
-  Writeln('Driving...');
+  Writeln('- Driving...');
 end;
 
 { TManager<T> }
