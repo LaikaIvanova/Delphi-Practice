@@ -26,11 +26,13 @@ type
   IDriveable = interface
     ['{F0662D67-688F-4BEF-BF96-6B6A1F945243}']
     procedure Drive;
+    procedure Refuel;
   end;
 
   TAuto = class(TFahrzeug, IDriveable)
   public
     procedure Drive;
+    procedure Refuel;
     constructor Create;
     destructor Destroy; override;
   end;
