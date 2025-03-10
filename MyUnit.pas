@@ -63,6 +63,11 @@ begin
   Writeln('- Driving...');
 end;
 
+procedure TAuto.Refuel;
+begin
+  Writeln('- Refueling...');
+end;
+
 { TManager<T> }
 
 procedure TManager<T>.AddItem(Item: T);
