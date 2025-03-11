@@ -3,9 +3,9 @@ program LearnApp;
 {$APPTYPE CONSOLE}
 
 uses
-  SysUtils,
+  System.SysUtils,
   MyUnit,
-  Generics.Collections;
+  System.Generics.Collections;
 
 procedure PrintWelcomeMessage;
 begin
@@ -96,6 +96,6 @@ begin
     end;
   end;
   WriteLn('');
-  Writeln('Press ENTER to exit.');
+  Writeln('Press ENTER to exit...');
   ReadLn;
 end.
