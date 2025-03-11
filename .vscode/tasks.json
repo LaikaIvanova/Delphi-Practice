@@ -2,18 +2,17 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build",
+      "label": "Delphi: Build and Run",
       "type": "shell",
-      "command": "C:\\Program Files (x86)\\Embarcadero\\Studio\\22.0\\bin\\dcc32.exe",
+      "command": "powershell",
       "args": [
-        "C:\\Users\\kid\\OneDrive - Orgadata Software-Dienstleistungen AG\\Projekte\\Delphi\\LearnApp\\LearnApp.dpr",
-        "-E",
-        "C:\\Users\\kid\\OneDrive - Orgadata Software-Diensleistungen AG\\Projekte\\Delphi\\LearnApp\\Output"
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/delphi/scripts/run.ps1",
+        "run"
       ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
       "problemMatcher": []
     }
   ]
