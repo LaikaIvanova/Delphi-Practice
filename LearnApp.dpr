@@ -4,8 +4,13 @@ program LearnApp;
 
 uses
   System.SysUtils,
-  MyUnit,
-  System.Generics.Collections;
+  System.Generics.Collections,
+  MyUnit in 'MyUnit.pas',
+  MyExamUnit in 'MyExamUnit.pas';
+
+var
+  Calculator: ICalculator;
+  SumResult: Integer;
 
 procedure PrintWelcomeMessage;
 begin
@@ -96,6 +101,17 @@ begin
     end;
   end;
   WriteLn('');
-  Writeln('Press ENTER to exit...');
+  Writeln('Press ENTER to continue.');
+  ReadLn;
+  try
+    Calculator := TSimpleCalculator.Create;
+    SumResult := Calculator.Add(10, 20);
+    WriteLn('Sum of 10 and 20 is: ', SumResult);
+  except
+    on E: Exception do
+      WriteLn(E.ClassName, ': ', E.Message);
+  end;
+  WriteLn('');
+  WriteLn('Press ENTER to exit.');
   ReadLn;
 end.
