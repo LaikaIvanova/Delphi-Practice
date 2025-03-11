@@ -9,8 +9,7 @@
       "args": [
         "run"
       ],
-      "cwd": "${workspaceFolder}",
-      "stopOnEntry": false
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
