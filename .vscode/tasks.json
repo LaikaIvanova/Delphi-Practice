@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "C:\\Program Files (x86)\\Embarcadero\\Studio\\22.0\\bin\\dcc32.exe",
+      "args": [
+        "C:\\Users\\kid\\OneDrive - Orgadata Software-Dienstleistungen AG\\Projekte\\Delphi\\LearnApp\\LearnApp.dpr",
+        "-E",
+        "C:\\Users\\kid\\OneDrive - Orgadata Software-Diensleistungen AG\\Projekte\\Delphi\\LearnApp\\Output"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
