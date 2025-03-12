@@ -19,7 +19,7 @@
                 "owner": "external",
                 "fileLocation": [
                     "relative",
-                    "C:/Users/kid/Desktop/Projekte/Delphi/Test123"
+                    "C:/Users/kid/Desktop/Projekte/Delphi/Delphi-Practice"
                 ],
                 "pattern": {
                     "regexp": "((([A-Za-z]):\\\\(?:[^\\/:*?\\\"<>|\\r\\n]+\\\\)*)?[^\\/\\s\\(:*?\\\"<>|\\r\\n]*)\\((\\d+)\\):\\s.*(fatal|error|warning|hint)\\s(\\w*):\\s(.*)$",
