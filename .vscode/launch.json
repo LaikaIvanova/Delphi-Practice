@@ -1,6 +1,22 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
+    {
+      "type": "by-gdb",
+      "request": "launch",
+      "name": "Launch(gdb)",
+      "program": "${fileBasenameNoExtension}",
+      "cwd": "${workspaceRoot}"
+    },
+    {
+      "type": "fpDebug",
+      "request": "launch",
+      "name": "Debug Pascal program",
+      "program": "${workspaceFolder}",
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": true
+    },
     {
       "type": "PowerShell",
       "request": "launch",
@@ -10,7 +26,7 @@
         "run"
       ],
       "cwd": "${workspaceFolder}",
-      "stopOnEntry": false
+      "stopOnEntry": true
     }
   ]
 }
